@@ -1,0 +1,159 @@
+[type="file"] {
+  height: 0;
+  overflow: hidden;
+  width: 0;
+}
+
+[type="file"] + label {
+  background: #f15d22;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Rubik", sans-serif;
+  font-size: inherit;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  outline: none;
+  padding: 1rem 50px;
+  position: relative;
+  transition: all 0.3s;
+  vertical-align: middle;
+
+  &.btn-2 {
+    background-color: #99c793;
+    border-radius: 50px;
+    overflow: hidden;
+
+    &::before {
+      color: #fff;
+      content: "";
+      font-family: "Font Awesome 5 Pro";
+      font-size: 100%;
+      height: 100%;
+      right: 130%;
+      line-height: 3.3;
+      position: absolute;
+      top: 0px;
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      background-color: darken(#99c793, 30%);
+
+      &::before {
+        right: 75%;
+      }
+    }
+  }
+}
+.addPOstSideBar {
+  // border: 10px solid red;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 180px;
+}
+.postBox {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // margin: 0 auto;
+  // margin-top: 10px;
+  // margin-left: 20px;
+  // height: 50vh;
+
+  padding: 20px;
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+  label {
+    margin: 20px 10px;
+    width: 50%;
+    @media only screen and (max-width: 600px) {
+      width: 90%;
+    }
+  }
+
+  input {
+    outline: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-color: #ccc;
+    width: 90%;
+    padding: 0 5px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+  }
+  textarea {
+    width: 90%;
+    height: 100px;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #ccc;
+    resize: none;
+    outline: none;
+    overflow: auto;
+    position: relative;
+    top: 10px;
+  }
+  textarea::-webkit-scrollbar {
+    display: none;
+  }
+}
+.uploadImgBox {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  margin: 20px 0;
+  text-align: center;
+}
+form {
+  // border: 1px solid black;
+  width: 40%;
+  margin-left: 10px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+form button {
+  border: none;
+  display: block;
+  background-color: #0074cc;
+  color: white;
+  padding: 8px;
+  width: 120px;
+  border-radius: 8px;
+  margin: 20px auto;
+  transition: all 0.5s;
+  cursor: pointer;
+  &:hover {
+    background-color: #00518f;
+  }
+}
+.center-bottom-image {
+  margin-left: 450px;
+}
+.forBorder {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+  padding: 5px 0;
+}
+// input:focus, button:focus {
+//   border: 1px solid var(--main-bg) !important;
+//   box-shadow: none !important;
+// }
+
+// .form-check-input:checked {
+//   background-color: var(--main-bg) !important;
+//   border-color: var(--main-bg) !important;
+// }
+
+// .card, .btn, input{
+//   border-radius:0 !important;
+// }
